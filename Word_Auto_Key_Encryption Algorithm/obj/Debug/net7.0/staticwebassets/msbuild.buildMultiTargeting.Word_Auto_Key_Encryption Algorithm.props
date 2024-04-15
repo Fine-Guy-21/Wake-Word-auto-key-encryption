@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Word_Auto_Key_Encryption Algorithm.props" />
+</Project>
