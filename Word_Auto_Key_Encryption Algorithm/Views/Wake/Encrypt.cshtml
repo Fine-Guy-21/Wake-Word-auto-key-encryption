@@ -1,0 +1,94 @@
+﻿@{
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">                    
+                    <input type="text" class="form-control" placeholder="Input Key" id="InputKey" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Calculated Hexadecimal" id="itcalculatedHex" readonly />
+                </div>
+            </div>
+           
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Plain text Here" id="InputKey" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Calculated Hexadecimal" id="ptcalculatedHex" readonly />
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row d-flex justify-content-center align-items-center ">
+
+            
+            <button class="col-5 btn btn-outline-success align-item-center justify-content-center" id="inputButton"> Encrypt Text </button>
+            <br>
+            <br>
+            <br>
+            <div class="col-10">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Encrypted Text" readonly />
+                </div>
+            </div>
+
+        </div>
+        
+        <br>
+        <hr>
+        <br>
+
+        <div class="table-responsive ">
+            
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Attribute 1</th>
+                            <th>Attribute 2</th>
+                            <th>Attribute 3</th>
+                            <th>Attribute 4</th>
+                            <th>Attribute 5</th>
+                            <th>Attribute 6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                    </tbody>
+                </table>            
+        </div>
+
+        <br><hr><br>
+
+        
+                    
+    </div>
+
+    <script>
+        document.getElementById("InputKey").addEventListener("keyup", function () {
+            var inputValue = this.value; // Get the value of the input field
+            document.getElementById("itcalculatedHex").value = inputValue;
+            console.log(inputValue);
+    });
+</script>
+
+}
